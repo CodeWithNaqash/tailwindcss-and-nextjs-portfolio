@@ -1,8 +1,9 @@
-"use client" // this is a client component
-import React from "react"
-import Image from "next/image"
-import { Link } from "react-scroll/modules"
-import { HiArrowDown } from "react-icons/hi"
+'use client'; // this is a client component Hi, I&#39;m Naqash!
+import React from 'react';
+import Image from 'next/image';
+import { Link } from 'react-scroll/modules';
+import { HiArrowDown } from 'react-icons/hi';
+import Typewriter from 'typewriter-effect';
 
 const HeroSection = () => {
   return (
@@ -17,19 +18,31 @@ const HeroSection = () => {
             className="rounded-full shadow-2xl"
           />
         </div>
-        <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m Hosna!</h1>
+        <div className="md:mt-2 md:w-3/5 ">
+          <h1 className="text-lg mt-4 mb-6 md:text-2xl ">Hi,</h1>
+          <h1
+            className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl "
+            id="text"
+          >
+            <Typewriter
+              options={{
+                strings: [`I'm Naqash!`, `Programmer`, `Developer`],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
-            I&#39;m a{" "}
-            <span className="font-semibold text-teal-600">
-              Software Engineer{" "}
+            I&#39;m a{' '}
+            <span className="font-semibold text-orange-400">
+              Web Developer{' '}
             </span>
-            based in Los Angeles, CA. Working towards creating software that
-            makes life easier and more meaningful.
+            , Working towards creating web apps and web developments that makes
+            life easier and more meaningful.
           </p>
           <Link
             to="projects"
-            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"
+            className="text-neutral-100 font-semibold px-6 py-3 bg-orange-400 rounded shadow hover:bg-orange-500"
             activeClass="active"
             spy={true}
             smooth={true}
@@ -53,7 +66,7 @@ const HeroSection = () => {
         </Link>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

@@ -1,41 +1,49 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import SlideUp from './SlideUp';
+import { BsGithub, BsArrowUpRightSquare } from 'react-icons/bs';
 
 const projects = [
   {
-    name: "Thankful Thoughts",
+    name: 'Panaverse Dao Website',
     description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      'ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.',
+    image: '/Panaverse.png',
+    github: 'https://github.com/CodeWithNaqash/Panavere-Samplesite',
+    link: 'https://panavere-website.vercel.app',
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: 'Todo App',
+    description:
+      'ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.',
+    image: '/Todo App.png',
+    github: 'https://github.com/CodeWithNaqash/todo-app',
+    link: 'https://todo-app-theta-flame.vercel.app',
   },
   {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+    name: 'Blog',
+    description: 'PlatoIO is a to do list app that built using the PERN stack.',
+    image: '/Blog_P.png',
+    github: 'https://github.com/CodeWithNaqash/next.js12-blog',
+    link: 'https://nextjs-blog-two-topaz-28.vercel.app',
   },
-]
+  {
+    name: 'Pricing UI',
+    description:
+      'Kator Family Photos is a photos and video digitization service in the LA area.',
+    image: '/PricingUI.png',
+    github: 'https://github.com/CodeWithNaqash/pricinguichakra',
+    link: 'https://pricinguichakra-rust.vercel.app',
+  },
+];
 
 const ProjectsSection = () => {
   return (
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
         Projects
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+        <hr className="w-6 h-1 mx-auto my-4 bg-orange-400 border-0 rounded"></hr>
       </h1>
 
       <div className="flex flex-col space-y-28">
@@ -78,12 +86,11 @@ const ProjectsSection = () => {
                 </div>
               </SlideUp>
             </div>
-          )
+          );
         })}
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;
