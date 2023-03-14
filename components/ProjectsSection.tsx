@@ -7,8 +7,7 @@ import { BsGithub, BsArrowUpRightSquare } from 'react-icons/bs';
 const projects = [
   {
     name: 'Panaverse Dao Website',
-    description:
-      'ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.',
+    description: 'First ever build website Panaverse Dao.',
     image: '/Panaverse.png',
     github: 'https://github.com/CodeWithNaqash/Panavere-Samplesite',
     link: 'https://panavere-website.vercel.app',
@@ -16,22 +15,21 @@ const projects = [
   {
     name: 'Todo App',
     description:
-      'ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.',
+      'Todo App that make us remind the Plan of a Day/List of Work to complete in a Month.',
     image: '/Todo App.png',
     github: 'https://github.com/CodeWithNaqash/todo-app',
     link: 'https://todo-app-theta-flame.vercel.app',
   },
   {
     name: 'Blog',
-    description: 'PlatoIO is a to do list app that built using the PERN stack.',
+    description: 'Building Blog website with two blogs in it.',
     image: '/Blog_P.png',
     github: 'https://github.com/CodeWithNaqash/next.js12-blog',
     link: 'https://nextjs-blog-two-topaz-28.vercel.app',
   },
   {
     name: 'Pricing UI',
-    description:
-      'Kator Family Photos is a photos and video digitization service in the LA area.',
+    description: 'Landing pricing page with Chakra UI and Next.js',
     image: '/PricingUI.png',
     github: 'https://github.com/CodeWithNaqash/pricinguichakra',
     link: 'https://pricinguichakra-rust.vercel.app',
